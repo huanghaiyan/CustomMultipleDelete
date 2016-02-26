@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B353F6F1C7EF74E00BC2786 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B353F6E1C7EF74E00BC2786 /* main.m */; };
+		6B353F721C7EF74E00BC2786 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B353F711C7EF74E00BC2786 /* AppDelegate.m */; };
+		6B353F781C7EF74E00BC2786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B353F761C7EF74E00BC2786 /* Main.storyboard */; };
+		6B353F7A1C7EF74E00BC2786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B353F791C7EF74E00BC2786 /* Assets.xcassets */; };
+		6B353F7D1C7EF74E00BC2786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B353F7B1C7EF74E00BC2786 /* LaunchScreen.storyboard */; };
+		6B353F861C7EF78100BC2786 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B353F851C7EF78100BC2786 /* FirstViewController.m */; };
+		6B353F8A1C7EF7E100BC2786 /* RootCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B353F881C7EF7E100BC2786 /* RootCell.m */; };
+		6B353F8B1C7EF7E100BC2786 /* RootCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B353F891C7EF7E100BC2786 /* RootCell.xib */; };
+		6B353F8E1C7EF92F00BC2786 /* HYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B353F8D1C7EF92F00BC2786 /* HYModel.m */; };
+		6B353F921C802AAB00BC2786 /* radio_big_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B353F8F1C802AAB00BC2786 /* radio_big_active.png */; };
+		6B353F931C802AAB00BC2786 /* radio_big_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B353F901C802AAB00BC2786 /* radio_big_active@2x.png */; };
+		6B353F941C802AAB00BC2786 /* radio_big_active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B353F911C802AAB00BC2786 /* radio_big_active@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B353F6A1C7EF74E00BC2786 /* CustomMultipleDelete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomMultipleDelete.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B353F6E1C7EF74E00BC2786 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B353F701C7EF74E00BC2786 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B353F711C7EF74E00BC2786 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B353F771C7EF74E00BC2786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B353F791C7EF74E00BC2786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B353F7C1C7EF74E00BC2786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B353F7E1C7EF74E00BC2786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B353F841C7EF78100BC2786 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		6B353F851C7EF78100BC2786 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		6B353F871C7EF7E100BC2786 /* RootCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootCell.h; sourceTree = "<group>"; };
+		6B353F881C7EF7E100BC2786 /* RootCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootCell.m; sourceTree = "<group>"; };
+		6B353F891C7EF7E100BC2786 /* RootCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootCell.xib; sourceTree = "<group>"; };
+		6B353F8C1C7EF92F00BC2786 /* HYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYModel.h; sourceTree = "<group>"; };
+		6B353F8D1C7EF92F00BC2786 /* HYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYModel.m; sourceTree = "<group>"; };
+		6B353F8F1C802AAB00BC2786 /* radio_big_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_big_active.png; sourceTree = "<group>"; };
+		6B353F901C802AAB00BC2786 /* radio_big_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_big_active@2x.png"; sourceTree = "<group>"; };
+		6B353F911C802AAB00BC2786 /* radio_big_active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_big_active@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B353F671C7EF74E00BC2786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B353F611C7EF74E00BC2786 = {
+			isa = PBXGroup;
+			children = (
+				6B353F6C1C7EF74E00BC2786 /* CustomMultipleDelete */,
+				6B353F6B1C7EF74E00BC2786 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B353F6B1C7EF74E00BC2786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B353F6A1C7EF74E00BC2786 /* CustomMultipleDelete.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B353F6C1C7EF74E00BC2786 /* CustomMultipleDelete */ = {
+			isa = PBXGroup;
+			children = (
+				6B353F8F1C802AAB00BC2786 /* radio_big_active.png */,
+				6B353F901C802AAB00BC2786 /* radio_big_active@2x.png */,
+				6B353F911C802AAB00BC2786 /* radio_big_active@3x.png */,
+				6B353F701C7EF74E00BC2786 /* AppDelegate.h */,
+				6B353F711C7EF74E00BC2786 /* AppDelegate.m */,
+				6B353F841C7EF78100BC2786 /* FirstViewController.h */,
+				6B353F851C7EF78100BC2786 /* FirstViewController.m */,
+				6B353F8C1C7EF92F00BC2786 /* HYModel.h */,
+				6B353F8D1C7EF92F00BC2786 /* HYModel.m */,
+				6B353F871C7EF7E100BC2786 /* RootCell.h */,
+				6B353F881C7EF7E100BC2786 /* RootCell.m */,
+				6B353F891C7EF7E100BC2786 /* RootCell.xib */,
+				6B353F761C7EF74E00BC2786 /* Main.storyboard */,
+				6B353F791C7EF74E00BC2786 /* Assets.xcassets */,
+				6B353F7B1C7EF74E00BC2786 /* LaunchScreen.storyboard */,
+				6B353F7E1C7EF74E00BC2786 /* Info.plist */,
+				6B353F6D1C7EF74E00BC2786 /* Supporting Files */,
+			);
+			path = CustomMultipleDelete;
+			sourceTree = "<group>";
+		};
+		6B353F6D1C7EF74E00BC2786 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B353F6E1C7EF74E00BC2786 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B353F691C7EF74E00BC2786 /* CustomMultipleDelete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B353F811C7EF74E00BC2786 /* Build configuration list for PBXNativeTarget "CustomMultipleDelete" */;
+			buildPhases = (
+				6B353F661C7EF74E00BC2786 /* Sources */,
+				6B353F671C7EF74E00BC2786 /* Frameworks */,
+				6B353F681C7EF74E00BC2786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomMultipleDelete;
+			productName = CustomMultipleDelete;
+			productReference = 6B353F6A1C7EF74E00BC2786 /* CustomMultipleDelete.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B353F621C7EF74E00BC2786 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = huanghy;
+				TargetAttributes = {
+					6B353F691C7EF74E00BC2786 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZGXJ8TF92T;
+					};
+				};
+			};
+			buildConfigurationList = 6B353F651C7EF74E00BC2786 /* Build configuration list for PBXProject "CustomMultipleDelete" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B353F611C7EF74E00BC2786;
+			productRefGroup = 6B353F6B1C7EF74E00BC2786 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B353F691C7EF74E00BC2786 /* CustomMultipleDelete */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B353F681C7EF74E00BC2786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B353F7D1C7EF74E00BC2786 /* LaunchScreen.storyboard in Resources */,
+				6B353F931C802AAB00BC2786 /* radio_big_active@2x.png in Resources */,
+				6B353F941C802AAB00BC2786 /* radio_big_active@3x.png in Resources */,
+				6B353F921C802AAB00BC2786 /* radio_big_active.png in Resources */,
+				6B353F8B1C7EF7E100BC2786 /* RootCell.xib in Resources */,
+				6B353F7A1C7EF74E00BC2786 /* Assets.xcassets in Resources */,
+				6B353F781C7EF74E00BC2786 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B353F661C7EF74E00BC2786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B353F721C7EF74E00BC2786 /* AppDelegate.m in Sources */,
+				6B353F8A1C7EF7E100BC2786 /* RootCell.m in Sources */,
+				6B353F861C7EF78100BC2786 /* FirstViewController.m in Sources */,
+				6B353F8E1C7EF92F00BC2786 /* HYModel.m in Sources */,
+				6B353F6F1C7EF74E00BC2786 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B353F761C7EF74E00BC2786 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B353F771C7EF74E00BC2786 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B353F7B1C7EF74E00BC2786 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B353F7C1C7EF74E00BC2786 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B353F7F1C7EF74E00BC2786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B353F801C7EF74E00BC2786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B353F821C7EF74E00BC2786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Niandong fu (8VM7GWYHF7)";
+				INFOPLIST_FILE = CustomMultipleDelete/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wemem.CustomMultipleDelete;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6B353F831C7EF74E00BC2786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Niandong fu (8VM7GWYHF7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Niandong fu (8VM7GWYHF7)";
+				INFOPLIST_FILE = CustomMultipleDelete/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wemem.CustomMultipleDelete;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B353F651C7EF74E00BC2786 /* Build configuration list for PBXProject "CustomMultipleDelete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B353F7F1C7EF74E00BC2786 /* Debug */,
+				6B353F801C7EF74E00BC2786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B353F811C7EF74E00BC2786 /* Build configuration list for PBXNativeTarget "CustomMultipleDelete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B353F821C7EF74E00BC2786 /* Debug */,
+				6B353F831C7EF74E00BC2786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B353F621C7EF74E00BC2786 /* Project object */;
+}
