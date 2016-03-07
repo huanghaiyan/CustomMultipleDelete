@@ -104,7 +104,14 @@
 -(void)editTableView{
     
     _tableView.editing = !_tableView.editing;
-    
+    if (!_tableView.editing) {
+        //当取消对_tableView的编辑时，遍历数据源修改数据源的选中状态
+        for (HYModel *model in _dataArray) {
+            model.selected = NO;
+        }
+         [_tableView reloadData];//重新加载_tableview
+    }
+   
 }
 
 -(void)deleteAllData
@@ -113,11 +120,15 @@
     NSMutableArray *array1 = [[NSMutableArray alloc]initWithArray:[_tableView indexPathsForSelectedRows]];
     //给这个数组按照倒序排序
     [array1 sortedArrayUsingSelector:@selector(compare:)];
+    
+    //临时数组
+    NSArray *array2 = [[NSMutableArray alloc]initWithArray:_dataArray];
     //遍历这个数组
     for (NSInteger b = array1.count - 1; b >= 0; b--) {
         //根据b在数组里面的位置 定位到到底是哪一行
         NSIndexPath *indexPath = array1[b];
-        [_dataArray removeObjectAtIndex:indexPath.row];
+        id obj = array2[indexPath.row];
+        [_dataArray removeObject:obj];
     }
     
     [_tableView reloadData];
@@ -169,12 +180,13 @@
     HYModel *model = _dataArray[indexPath.row];
     rootCell.titleLabel.text = model.titleStr;
     [rootCell.subTitleBtn setTitle:model.subTitleStr forState:UIControlStateNormal];
-//    if (model.selected) {
-//            [rootCell.selectedBtn setBackgroundImage:[UIImage imageNamed:@"radio_big_active"] forState:UIControlStateNormal];
-//        }
     
-    return rootCell;
+    if (model.selected) {
+        
+        [rootCell.selectedBtn setBackgroundImage:[UIImage imageNamed:@"radio_big_active"] forState:UIControlStateNormal];
+    }
 
+    return rootCell;
 }
 
 //设置每个cell的高度
@@ -186,19 +198,17 @@
 //点击某个cell的方法 点击这一行想做什么事儿的代码 都写在这个方法里
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"你点击了第几行%d",indexPath.row);
     HYModel *model = _dataArray[indexPath.row];
     RootCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     if (tableView.editing == YES) {
-        model.selected = !model.selected;
-        for (HYModel *model in _dataArray) {
-            if (model.selected) {
+        model.selected = YES;
+        
+        if (model.selected) {
                 
-                [cell.selectedBtn setBackgroundImage:[UIImage imageNamed:@"radio_big_active"] forState:UIControlStateNormal];
-            }
+            [cell.selectedBtn setBackgroundImage:[UIImage imageNamed:@"radio_big_active"] forState:UIControlStateNormal];
+            
         }
         
-
     }else{
     
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -210,18 +220,9 @@
 {
     HYModel *model = _dataArray[indexPath.row];
     RootCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if (tableView.editing == YES) {
-        
-        model.selected = !model.selected;
-
-        for (HYModel *model in _dataArray) {
-            if (model.selected) {
-                
-                [cell.selectedBtn setBackgroundImage:[UIImage imageNamed:@"radio_big_active"] forState:UIControlStateNormal];
-            }else{
-                [cell.selectedBtn setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-            }
-        }
+        model.selected = NO;
+        if (!model.selected) {
+            [cell.selectedBtn setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
     }
 }
 
@@ -232,7 +233,7 @@
     return YES;
 }
 
-//第二步 返回tableviewcell的编辑类型 （到底是让这个cell删除啊 还是增加啊）
+//第二步 返回tableViewCell的编辑类型 （到底是让这个cell删除啊 还是增加啊）
 -(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //开启多选删除的模式
