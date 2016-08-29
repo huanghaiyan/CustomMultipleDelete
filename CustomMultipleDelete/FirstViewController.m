@@ -120,7 +120,6 @@
     NSMutableArray *array1 = [[NSMutableArray alloc]initWithArray:[_tableView indexPathsForSelectedRows]];
     //给这个数组按照倒序排序
     [array1 sortedArrayUsingSelector:@selector(compare:)];
-    
     //临时数组
     NSArray *array2 = [[NSMutableArray alloc]initWithArray:_dataArray];
     //遍历这个数组
